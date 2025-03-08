@@ -1,0 +1,161 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+header .highlight {
+    color: #f39c12;
+}
+
+nav ul {
+    background-color: #110101;
+    padding: 10px;
+    list-style-type: none;
+    width:auto;
+    margin: 0;
+    display: flex;
+    justify-content: space-evenly; 
+  }
+  
+  nav ul li a {
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #ffffff; /* Keep text white */
+    background-color: #1a1a1a; 
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+    border-radius: 5px; /* Optional: Rounded corners */
+  }
+  
+  nav ul li a:hover {
+    color: #000000; /* Pure black text for hover */
+    background-color: #f5f5f5; 
+  }
+  
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+main section {
+    flex: 1 1 300px;
+    margin: 15px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fafafa;
+}
+.card img {
+    width: 100px; 
+    height: auto;   
+  }
+/* Web Development Resources list */
+.card ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.card ul li {
+    padding: 5px 0;
+}
+
+.card ul li a {
+    color: #0056b3; /* Darker blue for better contrast */
+    text-decoration: underline;
+}
+
+.card ul li a:hover {
+    text-decoration: underline;
+    color: #003580;
+}
+
+.card {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Headings for each card */
+  .card h2 {
+    text-align: left;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #f39c12;
+    padding-bottom: 5px;
+  }
+  
+  /* Flex container for row layout */
+  .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  /* Each row gets 2 columns */
+  .image-text .text,
+  .image-text .image {
+    flex: 1;
+  }
+  
+  /* Give a little padding to the text container */
+  .image-text .text {
+    padding: 0 15px;
+  }
+  
+  /* Styling for images; ensure they don’t overwhelm the layout */
+  .image-text .image img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 5px;
+  }
+  
+  /* Reverse the row order for subtitle block (image on left, text on right) */
+  .row.reverse {
+    flex-direction: row-reverse;
+  }
+  
+  /* Styles for the secondary heading and horizontal line */
+  .text h3 {
+    margin-bottom: 5px;
+    font-size: 1.4rem;
+    color: #555;
+  }
+  
+  .text hr {
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin-bottom: 10px;
+  }
+  
+/* Footer */
+footer {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 5px 0;
+}

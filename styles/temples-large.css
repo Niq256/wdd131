@@ -1,0 +1,28 @@
+@media (min-width: 800px) {
+    .hamburger {
+        display: none; /* Hide hamburger in large view */
+    }
+
+    nav ul {
+        display: flex; /* Horizontal navigation menu */
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    main {
+        display: grid; /* Grid layout for figures */
+        grid-template-columns: repeat(3, 1fr); /* 3 columns */
+        gap: 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    figure {
+        text-align: center;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}

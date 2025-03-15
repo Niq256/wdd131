@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131: Dynamic Web Fundamentals - Twesigye Niclous</title>
+    <meta name="author" content="Twesigye Niclous">
+    <meta name="description" content="This page shows a picture album that is responsive in small and larger views. This page utilizes a 'hamburger' menu and respond to user requests.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+</head>
+<body>
+    <header>
+        <h1>Temple Album</h1>
+        <button class="hamburger">☰</button>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Old</a></li>
+                <li><a href="#">New</a></li>
+                <li><a href="#">Large</a></li>
+                <li><a href="#">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <figure>
+            <img src="images/Arequipa-peru-temple.jpeg" alt="Arequipa-peru-temple">
+            <figcaption>Arequipa peru temple</figcaption>
+        </figure>
+        <figure>
+            <img src="images/Asuncion-paraguay-temple.jpeg" alt="Asuncion-paraguay-temple">
+            <figcaption>Asuncion paraguay temple</figcaption>
+        </figure>
+        <figure>
+            <img src="images/boise-idaho-temple.jpg" alt="boise-idaho-temple">
+            <figcaption>Boise Idaho temple</figcaption>
+        </figure>
+        <figure>
+            <img src="images/10-Billings-Montana-Temple.jpg" alt="10-Billings-Montana-Temple">
+            <figcaption>10 Billings Montana Temple</figcaption>
+        </figure>
+        <figure>
+            <img src="images/adelaide-australia-temple.jpg" alt="adelaide-australia-temple">
+            <figcaption>Adelaide australia temple</figcaption>
+        </figure>
+        <figure>
+            <img src="images/albuquerque-temple.jpg" alt="albuquerque-temple">
+            <figcaption>Albuquerque temple</figcaption>
+        </figure>
+        <figure>
+            <img src="images/accra-ghana-temple.jpg" alt="accra-ghana-temple">
+            <figcaption>Accra Ghana temple</figcaption>
+        </figure>
+        <figure>
+            <img src="images/anchorage-temple.jpg" alt="anchorage-temple">
+            <figcaption>Anchorage temple</figcaption>
+        </figure>
+        <figure>
+            <img src="images/Cedar-city-utah-temple.jpg" alt="Cedar-city-utah-temple">
+            <figcaption>Cedar city Utah temple</figcaption>
+        </figure>
+        <figure>
+            <img src="images/boston-temple.jpg" alt="boston-temple">
+            <figcaption>Boston temple</figcaption>
+        </figure>
+        
+    </main>
+<footer>
+  <p>&copy; <span id="currentyear"></span> 🌸 Twesigye Niclous 🌸 Uganda </p>
+  <p id="lastModified"></p>
+</footer>
+<script src="scripts/getdates.js" defer></script>
+<script src="scripts/temples.js" defer></script>
+</body>
+</html>

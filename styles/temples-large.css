@@ -10,13 +10,23 @@
     }
 
     main {
-        display: grid; /* Grid layout for figures */
-        grid-template-columns: repeat(3, 1fr); /* 3 columns */
-        gap: 20px;
         max-width: 1200px;
         margin: 0 auto;
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* 3 columns for images */
+        gap: 20px;
     }
-
+    
+    /* Style for <h2> in the main section */
+    main h2 {
+        grid-column: 1 / -1; /* Span the entire width of the grid */
+        font-size: 2rem;
+        color: black;
+        margin: 10px 0; /* Add spacing around the heading */
+        text-align: center; /* Center the text */
+    }
+ 
     figure {
         text-align: center;
     }

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131: Dynamic Web Fundamentals - Twesigye Niclous</title>
+    <meta name="author" content="Twesigye Niclous">
+    <meta name="description" content="This page contains information about my country, Uganda.">
+    <link rel="stylesheet" href="styles/place.css">
+</head>
+<body>
+  <main>
+  <!-- Page heading -->
+  <div class="header">
+    <h1>UGANDA</h1>
+  </div>
+
+  <!-- Hero section with image and overlay info boxes -->
+  <div class="hero">
+    <picture>
+      <source media="(min-width: 1500px)" srcset="images/grey-crowned-cranes-in-love-large.webp">
+      <img src="images/grey-crowned-cranes-in-love-small.webp" alt="grey-crowned-cranes-in-love-small" width="500" height="300">
+  </picture>
+
+    <div class="info-box first">
+      <h2>Data</h2>
+      <p><strong>Area:</strong> 241,038 sq km</p>
+      <p><strong>Population:</strong> 51,384,894</p>
+      <p><strong>Capital:</strong> Kampala</p>
+      <p><strong>Languages:</strong> Swahili, English</p>
+      <p><strong>Currency:</strong> Ugandan Shilling</p>
+      <p><strong>TimeZone:</strong> GMT +3</p>
+      <p><strong>Calling Code:</strong> +256</p>
+      <p><strong>Internet TLD:</strong> .ug</p>
+    </div>
+
+    <div class="info-box second">
+      <h2 class="heading-weather">Weather</h2>
+      <img class="weather-icon" src="images/weather-icon.svg" alt="Weather Icon">
+      <p><strong>Temperature:</strong> <span id="temperature">10&deg;C</span></p>
+      <p><strong>Conditions:</strong> Partly Cloudy</p>
+      <p><strong>Wind:</strong> <span id="wind-speed">5 km/h</span></p>
+      <p><strong>Wind Chill:</strong> <span id="windChill">Calculating...</span>
+      </p>
+    </div>
+  </div>
+  </main>
+  <footer>
+    <p>&copy; <span id="currentyear"></span> 🌸 Twesigye Niclous 🌸 Uganda </p>
+    <p id="lastModified"></p>
+  </footer>
+  <script src="scripts/place.js" defer></script>
+</body>
+</html>

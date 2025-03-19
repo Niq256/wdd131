@@ -1,7 +1,13 @@
- body {
+:root {
+  --primary-color: #8A0000;
+  --secondary-color: #333;
+  --text-color: #fff;
+  --background-color: white;
+}
+body {
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
   background-color: white;
 }
 .weather-icon {
@@ -19,6 +25,7 @@
   padding: 20px;
   text-align: center;
 }
+
 
 /* Hero section container */
 .hero {

@@ -96,7 +96,7 @@ const temples = [
       templesArray.forEach(temple => {
           const card = `
               <article class="temple-card">
-                  <h3>${temple.templeName}</h3>
+                  <h2>${temple.templeName}</h2>
                   <p>Location: ${temple.location}</p>
                   <p>Dedicated: ${temple.dedicated}</p>
                   <p>Area: ${temple.area} sq ft</p>

@@ -1,3 +1,4 @@
+/* :root pseudo-class used with at least two global variables defined. */
 :root {
   --primary-color: #8A0000;
   --secondary-color: #333;

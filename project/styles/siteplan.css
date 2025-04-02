@@ -1,0 +1,82 @@
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    background-color: #F4F4F4;
+    color: #112A46;
+    line-height: 1.6;
+    padding: 1rem;
+}
+
+header {
+    text-align: center;
+    background-color: #134942;
+    color: #FFFFFF;
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+header h1 {
+    font-family: "Roboto", sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1.1rem;
+    font-style: italic;
+}
+
+main {
+    margin: 2rem auto;
+    max-width: 800px;
+}
+
+main section {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background-color: white;
+    border: 1px solid #E9E9E9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+main h2 {
+    font-family: 'Roboto', sans-serif;
+    color: #134942;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+main ul {
+    margin-top: 0.5rem;
+    padding-left: 1.5rem;
+}
+
+main li {
+    margin-bottom: 0.5rem;
+}
+
+/* Wireframe Section Styling */
+section img {
+    display: block;
+    margin: 1rem auto;
+    max-width: 100%;
+    border: 1px solid #E9E9E9;
+    border-radius: 8px;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #134942;
+    color: #FFFFFF;
+    border-radius: 8px;
+    font-size: 0.9rem;
+}

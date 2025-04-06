@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Twesigye Niclous">
+    <meta name="description" content="This is an ellustration of a product review form page"
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Product Review Form</title>
+    <link rel="stylesheet" href="styles/form-style.css">
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <form method="get" action="review.html"
+        <label for="product">Product Name:</label>
+        <select id="product" name="product" required>
+            <option disabled selected>Select a Product...</option>
+        </select>
+        <fieldset>
+            <legend>Overall Rating:</legend>
+            <div>
+                <label>
+                    ☆
+                    <br>
+                    <input type="radio" id="rating1" name="rating" value="1" required>
+                </label>
+                <label>
+                    ☆☆
+                    <br>
+                    <input type="radio" id="rating2" name="rating" value="2" required>
+                </label>
+                <label>
+                    ☆☆☆
+                    <br>
+                    <input type="radio" id="rating3" name="rating" value="3" required>
+                </label>
+                <label>
+                    ☆☆☆☆
+                    <br>
+                    <input type="radio" id="rating4" name="rating" value="4" required>
+                </label>
+                <label>
+                    ☆☆☆☆☆
+                    <br>
+                    <input type="radio" id="rating5" name="rating" value="5" required>
+                </label>
+            </div>
+        </fieldset>
+        <label for="installationDate">Date of Installation:</label>
+        <input type="date" id="installationDate" name="installationDate" required>
+        <fieldset>
+            <legend>Which Features did you find useful in the product? <br> <i>(Check all that apply)</i>:</legend>
+            <label for="feature1">
+                <input type="checkbox" id="feature1" name="features" value="feature1"> Durability
+            </label>
+            <label for="feature2">
+                <input type="checkbox" id="feature2" name="features" value="feature2"> Ease of use
+            </label>
+            <label for="feature3">
+                <input type="checkbox" id="feature3" name="features" value="feature3"> Performance
+            </label>
+            <label for="feature4">
+                <input type="checkbox" id="feature4" name="features" value="feature4"> Design
+            </label>
+        </fieldset>
+        <label for="review">Written Review:</label>
+        <textarea id="review" name="review"></textarea>
+
+        <label for="username">Your Name:</label>
+        <input type="text" id="username" name="username">
+
+        <input type="submit" value="Post Review">
+    </form>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> 🌸 Twesigye Niclous 🌸 Uganda </p>
+        <p id="lastModified"></p>
+      </footer>
+    <script src="scripts/form-script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,476 @@
+:root {
+    --primary-color: #112a46;  
+    --secondary-color: #ffffff;
+    --font-family: Lato, sans-serif; 
+  }
+
+  body {
+    color: var(--primary-color);
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-style: normal;
+  }
+
+h1, h2, h3, h4, h5, h6 { 
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+.logo img {
+	margin: 0 0.25rem 0 1rem;
+	width: 64px;
+	height: auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem auto;
+    max-width: 95%;
+    position: relative;
+}
+.navigation a {
+    color: white;
+    display: block;
+    padding: 20px;
+    background-color: #134942;
+    border-radius: 15px;
+    text-decoration: none;
+    margin: 20px;
+}
+
+.navigation a:hover {
+    color: #f4f4f4;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 75%;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.hamburger {
+    display: none; /* Initially hide the hamburger */
+    cursor: pointer;
+    padding: 10px;
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: #134942;
+    margin: 5px 0;
+    display: block;
+}
+
+@media (max-width: 799px) {
+    .navigation {
+        display: none; /* Hide navigation links on smaller screens */
+        flex-direction: column;
+        position: absolute;
+        top: 60px; /* Adjust based on your header height */
+        right: 0; /* Align to the right */
+        background-color: #f4f4f4;
+        width: 100%;
+        text-align: center;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        z-index: 10; /* Ensure it's above other content */
+    }
+
+    .navigation.active {
+        display: flex; /* Show navigation links when hamburger is active */
+    }
+
+    .navigation a {
+        padding: 15px;
+        display: block;
+    }
+
+    .hamburger {
+        display: block; /* Show hamburger on smaller screens */
+        position: absolute; /* Position it relative to the header */
+        top: 50%;
+        right: 1rem; /* Add some right margin */
+        transform: translateY(-50%); /* Vertically center */
+    }
+}
+p {
+    font-weight: 500;
+    font-style: normal;
+    flex: 1;
+    text-align: justify;
+  }
+
+.hero {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;    
+  padding: 20px; 
+  background-size: cover; 
+  background-position: center; 
+}
+
+.hero h1 {
+  text-align: center;      
+  margin-bottom: 20px;   
+  font-size: 2.5em;
+}
+
+
+.hero article p {
+  text-align: justify; 
+  color: #333;
+}
+
+.card img {
+  max-width: 200px; 
+  height: auto;   
+}
+
+.history {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.history-heading {
+  text-align: center; 
+  margin-bottom: 10px; 
+}
+
+.history-content {
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.history img {
+  max-height: 100px;
+}
+.adventure {
+  text-align: center;
+  padding: 2rem; 
+}
+
+.adventure h2 {
+  margin-bottom: 1rem; 
+}
+
+.adventure figure {
+  display: inline-block; 
+  width: 15%;
+  margin: 0.5rem;
+  vertical-align: top;
+}
+
+.adventure img {
+  width: 100%; 
+  height: 200px;
+  display: block;
+}
+
+.adventure figcaption {
+  margin-top: 0.5rem; 
+  font-style: italic;
+  text-align: center; 
+}
+
+footer {
+  display: flex; 
+  justify-content: space-between;
+  align-items: center; 
+  padding: 20px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.socials {
+  display: flex; 
+  flex-direction: row;
+  gap: 1rem; 
+}
+
+.socials img {
+  width: 30px; 
+  height: 30px;
+}
+table {
+  width: 95%;
+  margin: 20px auto;
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left; 
+}
+th {
+  background-color: #f2f2f2;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+label, input[type="radio"] {
+  display: inline-block;
+  margin-right: 10px; 
+}
+
+input[type="text"], input[type="email"], select, textarea {
+  width: 50%;
+  padding: 5px;
+  margin-bottom: 5px;
+  box-sizing: border-box; 
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #433661;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #f4f4f4;
+}
+.map-container {
+  width: 100%; 
+  height: 200px;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  border: 0; 
+}
+
+.call-to-action {
+  text-align: center;
+  padding: 2em;
+}
+
+.call-to-action a {
+  display: inline-block;
+  padding: 1em 2em;
+  background-color: #021809;
+  color: #E4EEF1;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.event-descriptions {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+  gap: 2em;
+  padding: 2em;
+}
+
+.event {
+  border: 1px solid #ccc;
+  padding: 1em;
+}
+
+.event img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 1em;
+}
+
+.event h3 {
+  margin-bottom: 0.5em;
+}
+
+.event p {
+  margin-bottom: 1em;
+}
+
+.event a {
+  display: inline-block;
+  padding: 0.5em 1em;
+  background-color: #021809;
+  color: #E4EEF1;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.event-table {
+  padding: 2em;
+}
+
+.event-table table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 2em;
+}
+.event-table th, .event-table td {
+  padding: 0.8em;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+.event-table th {
+  background-color: #f0f0f0; 
+}
+
+.hero2 {
+  position: relative;
+  width: 100%;
+  overflow: hidden; 
+}
+
+.hero2 img { 
+  width: 100%;
+  height: auto;
+  display: block; 
+}
+
+.hero2-content { 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  width: 80%;
+}
+.hero2 h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color: #0E1D67;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.newsletter {
+  padding: 2rem;
+  text-align: center;
+  background-color: #f8f9fa;
+}
+
+.newsletter form input {
+  padding: 0.5rem;
+  margin: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.about-us {
+  padding: 2rem;
+  text-align: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+  gap: 2rem; /* Spacing between grid items */
+  margin-top: 2rem;
+}
+
+.grid-item {
+  text-align: center;
+}
+
+.grid-item img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form label {
+    margin: 10px 0 5px;
+    text-align: left;
+}
+
+form input, form textarea, form button {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #e9e9e9;
+    border-radius: 4px;
+}
+
+form button {
+    background-color: #134942;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #112a46;
+}
+
+/* Live Chat */
+#live-chat {
+    margin-top: 40px;
+}
+
+#chatbox {
+    border: 1px solid #e9e9e9;
+    padding: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+
+.chat-messages {
+    height: 200px;
+    overflow-y: auto;
+    border-bottom: 1px solid #e9e9e9;
+    margin-bottom: 10px;
+}
+
+.chat-messages div {
+    margin: 5px;
+    padding: 5px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+}
+
+#chat-input {
+    width: 80%;
+    border: 1px solid #e9e9e9;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+#send-btn {
+    width: 18%;
+    background-color: #134942;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#send-btn:hover {
+    background-color: #112a46;
+}

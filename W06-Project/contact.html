@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel = "stylesheet" href="styles/air-spaces-style.css">
+  <title>Contact Us | Pure Air Spaces</title>
+  <meta name="author" content="Twesigye Niclous">
+  <meta name="description" content="Ready to transform our air spaces? Join us today and let us make a difference in our communities">
+</head>
+<body>
+    <header>
+        <img src="images/logo.PNG" alt="wwr logo" width="200">
+        <nav class="navigation">
+            <a href="index.html">HOME</a>
+            <a href="contact.html">CONTACT US</a>
+            <a href="events.html">EVENTS</a>
+        </nav>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </header>
+  <main>
+    <section id="contactForm">
+        <h1>Contact Us</h1>
+        <p>We'd love to hear from you! Whether it's a question, feedback, or a collaboration opportunity, reach out to us using the form below.</p>
+        <form id="formPage">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your full name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your email address" required>
+            
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" placeholder="Your message" required></textarea>
+            
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+    <section id="live-chat">
+        <h2>Live Chat</h2>
+        <div id="chatbox">
+            <div class="chat-messages">
+                <!-- Chat messages will be dynamically added here -->
+            </div>
+            <input type="text" id="chat-input" placeholder="Type your message..." />
+            <button id="send-btn">Send</button>
+        </div>
+    </section>
+</main>
+
+<footer>
+  <p>&copy; 2025 | Pure Air Spaces | Twesigye Niclous</p>
+  <nav class="socials">
+    <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.png" alt="Facebook"></a>
+    <a href="https://www.twitter.com/" target="_blank"><img src="images/twitter.png" alt="Twitter"></a>
+    <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram.png" alt="Instagram"></a>
+  </nav>
+</footer>
+<script src="scripts/contact-form.js" defer></script>
+<script src="scripts/air-spaces-script.js" defer></script>
+</body>
+</html>

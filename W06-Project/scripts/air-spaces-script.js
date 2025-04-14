@@ -8,9 +8,11 @@ document.getElementById("pageForm").addEventListener("submit", function(event) {
 const hamburger = document.querySelector(".hamburger");
 const navigation = document.querySelector(".navigation");
 
-hamburger.addEventListener("click", () => {
-    navigation.classList.toggle("active");
-});
+if (hamburger && navigation) {
+    hamburger.addEventListener("click", () => {
+        navigation.classList.toggle("active");
+    });
+}
 
 // Live Chat
 const chatMessages = document.querySelector('.chat-messages');
